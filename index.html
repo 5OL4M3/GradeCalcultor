@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <a href="a" class="button" id="button-addClass">Add Class</a>
+    </div>
+
+    <div class ="popup hidden" id= "popup">
+        <div class="popup-content" id = "popup-content">
+            <input type="text" placeholder="Class Name" class="input-name">
+            
+            <div class="input-credit">
+                <button class="button-credit" id="button-credit">
+                    <span id="select-label"> select credit hour </span>
+                    <div class="arrow"></div>
+                </button>
+                <div id = "dropdown-credit" class="dropdown hidden">
+                    <label class="select-item" for="select-1">1 credit hour</label>
+                    <input class="option-credit" id = "select-1" type="radio" name = "credit" value = "1 credit hour"> 
+                    <br>
+                    <label class="select-item" for="select-2">2 credit hour</label>
+                    <input class="option-credit" id = "select-2" type="radio" name = "credit" value = "2 credit hour"> 
+                    <br>
+                    <label class="select-item" for="select-3">3 credit hour</label>
+                    <input class="option-credit" id = "select-3" type="radio" name = "credit" value = "3 credit hour"> 
+                    <br>
+                    <label class="select-item" for="select-4">4 credit hour</label>
+                    <input class="option-credit" id = "select-4" type="radio" name = "credit" value = "4 credit hour">
+                    <br>
+                    <label class="select-item" for="select-5">5 credit hour</label>
+                    <input class="option-credit" id = "select-5" type="radio" name = "credit" value = "5 credit hour">  
+                </div>
+            </div>
+            <div class = "add-section">
+                <label for="add-breakdown">Category:</label>
+                <input type="text" placeholder="ex. Homework, Midterm 1" class="textbox">
+                <label for="add-weight">Weight (%):</label>
+                <input type="number" placeholder = "ex. 25%, 30%, 40%" class="textbox">
+                <a href="#" class="button" id="button-addCategory">Add</a>
+            </div>
+
+            <div class = "display-section" id = "display-section">
+                <template id="category-template">
+                    <div class="category-block" id="lol">
+                        <input id="text-category" type="text" class="text-category">
+                        <input type="text" class="text-weight">
+                        <a href="#" class="trash" id="trash">x</a>
+                    </div>
+                </template>
+            </div>
+            <a href="#" class="button confirm" id="button-confirm">Confirm</a>
+            <a href="#" class="button cancel" id="button-cancel">Cancel</a>
+        </div>
+    </div>
+</body>
+</html>

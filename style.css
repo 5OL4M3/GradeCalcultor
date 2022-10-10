@@ -1,0 +1,215 @@
+body {
+    background: linear-gradient(to right, #00AAFF, #00FF6C);
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.container h1{
+    color: rgb(255, 255, 255);
+    font-size: 36px;
+    margin-bottom: 40px;
+    text-shadow:rgba(0, 0, 0, .75);
+    font-weight: bolder;
+}
+
+.button{
+    background-color: white;
+    padding: 10px 15px;
+    color:  #00AAFF;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 25px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.button:hover{
+    color: #00FF6C;
+    box-shadow: 6px 6px 29px -4px rgba(0, 0, 0, .75);
+}
+
+.popup{
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.popup .popup-content{
+    height: 500px;
+    width: 650px;
+    background: white;
+    border-radius: 20px; 
+    padding: 20px;
+    position: relative;
+}
+
+.popup .popup-content .confirm{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.popup .popup-content .cancel{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+.popup .popup-content .cancel:hover{
+    color: red;
+}
+
+.popup .popup-content .input-name{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    display: block;
+    width: 50%;
+    padding: 1%;
+    border: 2.5px solid #00AAFF;
+    border-radius: 20px;
+}
+.popup .popup-content .input-credit{
+    position: relative;    
+}
+
+.popup .popup-content .button-credit{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    padding: 1%;
+    border: 2.5px solid #00AAFF;
+    background-color: white;
+    border-radius: 20px;
+    width: 22%;
+    position: absolute;
+    right: 0px;
+    color: #868686;
+}
+
+.popup .popup-content .arrow{
+    border: solid  #00AAFF;
+    border-width: 0 2px 2px 0;
+    padding: 4px;
+    transform: rotate(45deg);
+}
+
+.popup .popup-content .dropdown{
+    border: 2px solid #00AAFF;
+    background-color: white;
+    border-radius: .3rem;
+    width: 22%;
+    box-sizing: border-box;
+    position: absolute;
+    right: 0px;
+    top: 40px;
+    z-index: 2;
+}
+.popup .popup-content .option-credit{
+    display: none;
+}
+
+
+.popup .popup-content .select-item{
+    color: #00AAFF;
+}
+
+.popup .popup-content .select-item:hover{
+    color:  #00FF6C;
+}
+
+.hidden{
+    display: none;
+}
+
+.popup .popup-content .add-section{
+    height: 150px;
+    width: 180px;
+    background: rgb(238, 238, 238);
+    border-radius: 20px; 
+    padding: 20px;
+    top: 80px;
+    text-align: left;
+    position: absolute;
+    font-size: 20px;
+    font-weight: bolder;
+    color: black;
+}
+.popup .popup-content .add-section .button{
+    font-size: 15px;
+    padding: 5px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+.popup .popup-content .add-section .textbox{
+    margin-bottom: 12px;
+    border-radius: 10px;
+    border: none;
+    display: inline-block;
+}
+.popup .popup-content .display-section{
+    height: 340px;
+    width: 350px;
+    background: rgb(238, 238, 238);
+    border-radius: 20px; 
+    padding: 20px;
+    position: absolute;
+    right: 20px;
+    top: 80px;
+}
+
+.category-block{
+    width: 20rem;
+    height: 2rem;
+    background-color: #ffffff;
+    margin-bottom: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    justify-content: space-evenly;
+    display:flex;
+    position: relative;
+}
+
+.category-block .text-weight{
+    width: 10%;
+    height: 80%;
+    border: none;
+}
+.category-block .text-category{
+    border: none;
+}
+.category-block .trash{
+    margin-top: 2%;
+    border-radius: 100%;
+    color: #ffffff;
+    background-color: rgb(94, 94, 94);
+    width: 20px;
+    height: 20px;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
